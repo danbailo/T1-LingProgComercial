@@ -18,7 +18,7 @@ public class PostgreSQL {
         try{
             Class.forName("org.postgresql.Driver");
             conn = DriverManager.getConnection("jdbc:postgresql://"+serverName+":5432/"+database_name,username,password);            
-            JOptionPane.showMessageDialog(null,"Conectado com sucesso!");
+            JOptionPane.showMessageDialog(null,"Conectado ao banco de dados com sucesso!");
         }
         catch(SQLException err){
             JOptionPane.showMessageDialog(null, "Erro ao tentar se conectar ao banco, verifique seus dados e tente novamente!\n"+err.getMessage());
