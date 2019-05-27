@@ -32,6 +32,7 @@ public class Menu {
         c.add(insert_product);
         c.add(query_product);
         c.add(quit);
+        f.setDefaultCloseOperation(0);
         f.setSize(200,150);
         f.setBounds(150,200,200,150);
         f.setVisible(true);	       	        	
@@ -42,9 +43,9 @@ public class Menu {
     
     class FuncBot implements ActionListener{    
         public void actionPerformed (ActionEvent e){
-            if (e.getSource()== insert_product) new InsertProduct(conn);
-            if (e.getSource()== query_product) new QueryProduct(conn);
-            if (e.getSource()== quit) System.exit(0);                	
+            if (e.getSource() == insert_product) new InsertProduct(conn);
+            if (e.getSource() == query_product) new QueryProduct(conn);
+            if (e.getSource() == quit) System.exit(0);
         }	          
     }     
 }

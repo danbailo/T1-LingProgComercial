@@ -14,7 +14,13 @@ import java.sql.*;
 public class Main {
     public static void main(String[] args) throws SQLException, ClassNotFoundException{
         PostgreSQL database = new PostgreSQL();
-        Connection conn = database.connect("localhost", "supermercado", "postgres", "root");   
+        
+        String server = "localhost";
+        String mydatabase = "supermercado";
+        String user = "postgres";
+        String password = "root";
+        
+        Connection conn = database.connect(server, mydatabase, user, password);
         new Menu(conn);
     }
 }
