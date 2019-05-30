@@ -20,8 +20,8 @@ import javax.swing.JFrame;
  */
 public class Menu {
     JFrame f=new JFrame("Menu de Opções");
-    JButton insert_product = new JButton ("Cadastrar Funcionários");
-    JButton query_product = new JButton ("Consultar Funcionários");
+    JButton insert_product = new JButton ("Cadastrar Produto");
+    JButton query_product = new JButton ("Consultar Produto");
     JButton quit = new JButton ("Sair");
     private Connection conn;
 	    

@@ -7,10 +7,7 @@ package Trabalho_LPC;
 
 import java.awt.*;
 import java.awt.event.*;
-import java.io.*;
 import java.sql.*;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.swing.*;
 
 /**
@@ -46,7 +43,7 @@ class QueryProduct extends JFrame{
         Limpar.addActionListener(new TrataBotaoLimpar());
 
         text1.setEditable(false);
-        c.add(labelVenda); c.add(textVenda);
+        c.add(labelVenda);
         c.add(textVenda);                
         scroll.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);        
         c.add(scroll);
@@ -56,7 +53,7 @@ class QueryProduct extends JFrame{
 
         setTitle("Consulta de Produtos Cadastrados");
         setSize (350,500);
-        setVisible (true);				
+        setVisible (true);			
     }
 
     class TrataBotaoFechar implements ActionListener{
